@@ -4,10 +4,25 @@
     <head>
         <title>Hello World!</title>
     </head>
+
+
     <body>
-        <h1 th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</h1>
+
+        <!-- <h1 th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</h1>
         <form th:action="@{/logout}" method="post">
             <input type="submit" value="Sign Out"/>
-        </form>
+        </form> -->
+
+        <input type="text" id="cityName" name="cityInput" placeholder="city name">
+        <input type="text" id="countryCode" name="countryInput" placeholder="country code">
+        <input type="text" id="stateCode" name="stateCode" placeholder="state code">
+        <button onclick="fetchWeather()">
+            Submit
+        </button>
+        <h5 id="error"></h5>
+        <h3 id = "city"></h3>
+        <div id="weather"></div>
+
+        <script src="/script.js"></script>
     </body>
 </html>
