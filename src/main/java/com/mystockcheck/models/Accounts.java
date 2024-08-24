@@ -13,6 +13,10 @@ public class Accounts {
     private String password;
     public Accounts(){
     }
+    public Accounts(String username, String password){
+        this.username = username;
+        this.password = password;
+    }
     public int getUid() {
         return uid;
     }

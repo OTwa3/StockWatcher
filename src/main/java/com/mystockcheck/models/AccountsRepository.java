@@ -1,12 +1,16 @@
 package com.mystockcheck.models;
 
-import java.util.List;
+import java.util.Optional;
+
+//import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+//import org.springframework.stereotype.Repository;
+
 
 public interface AccountsRepository extends JpaRepository<Accounts,Integer> {
-    List<Accounts> findByUsername(String username);
-    List<Accounts> findByPassword(String password);
+   Optional<Accounts> findByUsername(String username);
+    Optional <Accounts> findByPassword(String password);
 }
 
 
