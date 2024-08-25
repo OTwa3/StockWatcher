@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/StockWatcher-0.0.1-SNAPSHOT.jar StockWatcher.jar
+COPY --from=build /target/mystockcheck-0.0.1-SNAPSHOT.jar mystockcheck.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","StockWatcher.jar"]
+ENTRYPOINT ["java","-jar","mystockcheck.jar"]
