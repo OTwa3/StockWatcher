@@ -1,4 +1,4 @@
-package com.mystockcheck.models;
+package com.mystockcheck.mystockcheck.models;
 
 import java.util.Optional;
 

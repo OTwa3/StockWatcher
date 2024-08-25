@@ -15,8 +15,8 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.mystockcheck.models.Accounts;
-import com.mystockcheck.models.AccountsRepository;
+import com.mystockcheck.mystockcheck.models.Accounts;
+import com.mystockcheck.mystockcheck.models.AccountsRepository;
 
 
 
